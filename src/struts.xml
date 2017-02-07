@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.objectFactory" value="spring"/>
+    <!-- 指定允许上传的文件最大字节数。默认值是2097152(2M) -->
+    <constant name="struts.multipart.maxSize" value="10701096"/>
+    <package name="user" namespace="/user" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.UserAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="academy" namespace="/academy" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.AcademyAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="patient" namespace="/patient" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.PatientAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="course" namespace="/course" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.CourseAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="activity" namespace="/activity" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.ActivityDataAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="score" namespace="/score" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.ScoreAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="cons" namespace="/cons" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.ConsAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="homepage" namespace="/homepage" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.HomePageAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="subject" namespace="/subject" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.SubjectAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="textbook" namespace="/textbook" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.TextBookAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="rdPatient" namespace="/rdPatient" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.RdPatientAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="feedback" namespace="/feedback" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.FeedBackAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="channel" namespace="/channel" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.ChannelAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="recovered" namespace="/recovered" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.RecoveredAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="team" namespace="/team" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.TeamAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="ward" namespace="/ward" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.WardAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="sys" namespace="/sys" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.SysAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="reward" namespace="/reward" extends="struts-default,json-default">
+        <action name="*" class="com.sd.action.RewardAction" method="{1}">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="common" namespace="/common" extends="struts-default,json-default">
+        <action name="areaSelect" class="com.sd.action.RegionAction" method="region">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+        <action name="hosSelect" class="com.sd.action.HospitalAction" method="query">
+            <result type="json">
+                <param name="root">
+                    responseJson
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="orderinfo" namespace="/orderinfo" extends="struts-default,json-default">
+      <action name="*" class="com.sd.action.OrderInfoAction" method="{1}">
+          <result type="json">
+              <param name="root">
+                  responseJson
+              </param>
+          </result>
+      </action>
+  </package>
+      <package name="column" namespace="/column" extends="struts-default,json-default">
+      <action name="*" class="com.sd.action.ColumnAction" method="{1}">
+          <result type="json">
+              <param name="root">
+                  responseJson
+              </param>
+          </result>
+      </action>
+  </package>
+      <package name="announcement" namespace="/announcement" extends="struts-default,json-default">
+      <action name="*" class="com.sd.action.AnnouncementAction" method="{1}">
+          <result type="json">
+              <param name="root">
+                  responseJson
+              </param>
+          </result>
+      </action>
+  </package>
+  <package name="WXpay" namespace="/WXpay" extends="struts-default,json-default">
+      <action name="*" class="com.sd.action.ZhiFuAction" method="{1}">
+          <result type="json">
+              <param name="root">
+                  responseJson
+              </param>
+          </result>
+      </action>
+  </package>
+</struts>
